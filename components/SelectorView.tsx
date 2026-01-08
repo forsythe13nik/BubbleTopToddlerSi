@@ -1,6 +1,6 @@
 import React from 'react';
-import { Category, LETTERS, NUMBERS, SHAPES, SHAPE_ICONS, COLORS, Language, LOCALIZATION } from '../types.ts';
-import { speak } from '../services/geminiService.ts';
+import { Category, LETTERS, NUMBERS, SHAPES, SHAPE_ICONS, COLORS, Language, LOCALIZATION } from '../types';
+import { speak } from '../services/geminiService';
 
 interface SelectorViewProps {
   category: Category;
