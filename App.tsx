@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { GameMode, Category, DifficultyLevel, Language } from './types.ts';
-import HomeView from './components/HomeView.tsx';
-import SelectorView from './components/SelectorView.tsx';
-import GameView from './components/GameView.tsx';
-import RewardView from './components/RewardView.tsx';
+import { GameMode, Category, DifficultyLevel, Language } from './types';
+import HomeView from './components/HomeView';
+import SelectorView from './components/SelectorView';
+import GameView from './components/GameView';
+import RewardView from './components/RewardView';
 
 const App: React.FC = () => {
   const [mode, setMode] = useState<GameMode>(GameMode.HOME);
