@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Bubble, DifficultyLevel, Category, LETTERS, NUMBERS, SHAPES, SHAPE_ICONS, COLORS, Language, LOCALIZATION } from '../types.ts';
-import { speak, getAudioBuffer } from '../services/geminiService.ts';
-import { audioService } from '../services/audioService.ts';
+import { Bubble, DifficultyLevel, Category, LETTERS, NUMBERS, SHAPES, SHAPE_ICONS, COLORS, Language, LOCALIZATION } from '../types';
+import { speak, getAudioBuffer } from '../services/geminiService';
+import { audioService } from '../services/audioService';
 
 interface GameViewProps {
   targetChar: string;
