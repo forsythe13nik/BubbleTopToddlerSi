@@ -52,7 +52,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <div id="loading-screen">
@@ -61,7 +60,7 @@
     </div>
     <div id="root"></div>
     
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
 
     <script>
         window.onerror = function(msg, url, lineNo, columnNo, error) {
@@ -74,7 +73,8 @@
         };
         window.addEventListener('load', () => {
             const observer = new MutationObserver(() => {
-                if (document.getElementById('root').children.length > 0) {
+                const root = document.getElementById('root');
+                if (root && root.children.length > 0) {
                     const loader = document.getElementById('loading-screen');
                     if (loader) loader.style.opacity = '0';
                     setTimeout(() => loader?.remove(), 500);
