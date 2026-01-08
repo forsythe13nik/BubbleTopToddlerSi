@@ -1,6 +1,6 @@
 import React from 'react';
-import { Category, Language, LOCALIZATION } from '../types.ts';
-import { audioService } from '../services/audioService.ts';
+import { Category, Language, LOCALIZATION } from '../types';
+import { audioService } from '../services/audioService';
 
 interface HomeViewProps {
   onSelect: (category: Category) => void;
