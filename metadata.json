@@ -1,0 +1,7 @@
+{
+  "name": "Bubble Pop Learner (Toddler Edition)",
+  "description": "An interactive identification game for 3-year-olds to learn letters and numbers using floating bubbles and real-time AI voice reinforcement.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
